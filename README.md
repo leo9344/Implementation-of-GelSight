@@ -1,5 +1,7 @@
 # Implementation-of-GelSight
 An implementation of [GelSight Wedge](https://arxiv.org/abs/2106.08851).
+
+Test passed on Ubuntu 18.04 and Windows 10. 🚩
 ## Requirements
 python>=3.7
 
@@ -8,6 +10,10 @@ opencv-python
 opencv4.x (C++ Version)
 
 pybind11
+
+pyyaml
+
+argparse
 
 glob
 
@@ -24,6 +30,26 @@ open3d
 ## Hardware
 🔨Coming soon!🔨
 ## Software
+
+### Step -1: set `config.yaml`
+`camid` for `cv2.VideoCapture(camid)`.
+
+`sample: from` for `{data_path}/sample_{sample_from}.jpg`.
+
+`sample: to` for `{data_path}/sample_{sample_to}.jpg`.
+
+`data_path` for `{data_path}`
+### Step 0: run `pref_ref_and_sample.py`
+    python pref_ref_and_sample.py -r -s
+
+
+`-r` or `--ref` for capturing `{data_path}/ref.jpg`.
+
+Click `left button` to take `ref.jpg`, you can click more than once until you are satiesfied. Then press `q` to exit or continue. 
+
+`-s` or `--ref` for capturing `{data_path}/sample_xx.jpg`.
+
+Click `left button` to take `sample_xx.jpg`. If `sample_to - sample_from` pictures are captured, it will terminate automatically. Or you can manually press `q` to exit in advance or continue. 
 
 ### Step 1: run `calibration_abberration.py`
 

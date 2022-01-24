@@ -1,0 +1,23 @@
+camid: 0
+
+sample:
+  from: 1
+  to: 30
+
+data_path: ./data
+
+heightmap:
+  abe_path: ./abe_corr.npz
+  crop_coordinates: 1
+
+
+tracking:
+  lib_path: ./lib
+  RESCALE: 1
+  N_: 5
+  M_: 5
+  fps_: 30
+  x0_: 10 #/ RESCALE
+  y0_: 17 #/ RESCALE
+  dx_: 40 #/ RESCALE
+  dy_: 40 #/ RESCALE
