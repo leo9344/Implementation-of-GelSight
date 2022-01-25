@@ -27,6 +27,7 @@ skimage
 
 open3d
 
+Visual Studio 2022
 ## Hardware
 🔨Coming soon!🔨
 ## Software

@@ -6,6 +6,13 @@ sample:
 
 data_path: ./data
 
+calibration:
+  crop: True
+  upleft_x: 170
+  upleft_y: 83
+  downright_x: 434
+  downright_y: 318
+
 heightmap:
   abe_path: ./abe_corr.npz
   crop_coordinates: 1
