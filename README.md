@@ -97,6 +97,8 @@ Get reconstruction result.
 ## Improvements
 🔨Coming soon!🔨
 Thin plate spline for inpaint of markers?
+
+Use model to map color to gradients.
 ## References
 We used https://github.com/siyuandong16/gelsight_heightmap_reconstruction for calibration and heightmap reconstruction and https://github.com/GelSight/tracking for tracking.
 ## Acknowledgements

@@ -12,8 +12,10 @@ calibration:
   upleft_y: 83
   downright_x: 434
   downright_y: 318
+  method: camera # marker or camera
 
 heightmap:
+  cpp_enable: False
   abe_path: ./abe_corr.npz
   crop_coordinates: 1
 
