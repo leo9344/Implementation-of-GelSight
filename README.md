@@ -47,7 +47,7 @@ We used surface mounted LEDs with 120 degree angle (in RGB colors) as the light 
 
 #### Transparent base:
 1. We 3D printed the mould (with resin) and laser-cut the acrylic sheet (placed at the bottom of the mould) for transparent silicone base manufacturing.
-2. we use Solaris (part A and part B) with Shore A 15 and Slacker (used to increase softness) from vendor Smooth-on® to produce the transparent elastomeric base. A ratio of 1:1:1 for each component has proven to be ideal for making an elastomeric base with the appropriate hardness. The mixture is then degassed and cured for 12 hours.  <br />
+2. we use Solaris (part A and part B) with Shore A 15 and Slacker (used to increase softness) from vendor Smooth-on® to produce the transparent elastomeric base. A ratio of 1:1:3 for each component has proven to be ideal for making an elastomeric base with the appropriate hardness. The mixture is then degassed and cured for 12 hours.  <br />
 
 
 
