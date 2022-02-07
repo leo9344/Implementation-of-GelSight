@@ -29,7 +29,37 @@ open3d
 
 Visual Studio 2022
 ## Hardware
-🔨Coming soon!🔨
+🔨        🔨
+
+### Camera: RaspberryPi Zero Camera Module (22Pin)
+We connect the camera module to a raspberrypi zero for image capture.<br />
+
+
+
+### Illumination: Three colors of LED arrays (RGB)
+We used surface mounted LEDs with 120 degree angle (in RGB colors) as the light source. Three LED arrays (each contains 2 LEDs) are circly distributted under the silicone. <br /> 
+
+
+
+### Silicone: Composed of transparent base, black markers and the reflective membrane <br />
+
+
+
+#### Transparent base:
+1. We 3D printed the mould (with resin) and laser-cut the acrylic sheet (placed at the bottom of the mould) for transparent silicone base manufacturing.
+2. we use Solaris (part A and part B) with Shore A 15 and Slacker (used to increase softness) from vendor Smooth-on® to produce the transparent elastomeric base. A ratio of 1:1:1 for each component has proven to be ideal for making an elastomeric base with the appropriate hardness. The mixture is then degassed and cured for 12 hours.  <br />
+
+
+
+#### Black markers:
+We painted markers on top surface of the transparent base with Silc-Pig (black colorant). The distance between each marker is around 1 mm.  <br />
+
+
+
+#### Reflective membrane:
+1. We dip a small amount of aluminum powder and spread it evenly upon the black markers.
+2. we use aluminum powder, Psycho Paint (part A and part B) and Novocs Matte (silicone diluter) to produce the reflective membrane. A ratio of 1:5:5:30 for each component has proven to be ideal for making a moderate membrane. The mixture is degassed and then sprayed on top of the transparent base surface. The membrane is cured for 4 hours. <br />
+
 ## Software
 
 ### Step -1: set `config.yaml`
