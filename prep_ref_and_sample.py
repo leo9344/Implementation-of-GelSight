@@ -1,10 +1,6 @@
-from ast import parse
 import cv2
-import numpy as np
-import matplotlib.pyplot as plt
 import argparse
 import yaml
-import os
 import sys
 
 def cap_ref(event, x, y, flags,params):
