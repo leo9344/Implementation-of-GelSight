@@ -105,7 +105,7 @@ output_size = 2
 dropout_rate = 0.3
 
 # model = MLP(input_size,hidden_size,output_size,dropout_rate).to(device)
-model = torch.load("./threelayernd.ckpt").to(device)
+model = torch.load("./best.ckpt").to(device)
 model.train()
 
 learning_rate = 0.001

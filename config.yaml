@@ -1,44 +1,65 @@
+calibration:
+  BallRad: 3
+  Pixmm: 0.031067
+  blue_range:
+  - -90
+  - 90
+  dist:
+  - - 142.90790698409464
+    - -50494.35358457427
+    - 0.31465177446412596
+    - -0.015119663896729281
+    - -232.52542390256139
+  downright_x: 409
+  downright_y: 313
+  green_range:
+  - -90
+  - 90
+  lookscale:
+  - 180.0
+  - 180.0
+  - 180.0
+  method: marker
+  mtx:
+  - - 5114.054972960956
+    - 0.0
+    - 303.3560857139312
+  - - 0.0
+    - 6345.695124741402
+    - 237.35916598858944
+  - - 0.0
+    - 0.0
+    - 1.0
+  ratio: 0.5
+  red_range:
+  - -80
+  - 90
+  upleft_x: 178
+  upleft_y: 88
+  zeropoint:
+  - -90
+  - -90
+  - -90
 camid: 0
-
+crop: true
+data_path: ./data
+heightmap:
+  abe_path: ./abe_corr.npz
+  cpp_enable: false
+  table_account_path: ./count_map.py
+  table_path: ./table.npy
+  table_smooth_path: ./table_smooth.npy
+marker:
+  M_: 5
+  N_: 5
+  dx_: 40
+  dy_: 40
+  x0_: 10
+  y0_: 17
 sample:
   from: 1
   to: 30
-
-data_path: ./data
-
-crop: True
-
-marker:
-  x0_: 10 #/ RESCALE
-  y0_: 17 #/ RESCALE
-  dx_: 40 #/ RESCALE
-  dy_: 40 #/ RESCALE
-  N_: 5
-  M_: 5
-
-calibration:
-  upleft_x: 170
-  upleft_y: 83
-  downright_x: 434
-  downright_y: 318
-  method: camera # marker or camera
-  BallRad: 3 #4.76/2 #mm
-  Pixmm: 0.031067    #.10577 #4.76/100 #0.0806 * 1.5 mm/pixel # 0.03298 = 3.40 / 103.0776
-  ratio: 0.5
-  red_range: [-80, 90]  # [-45, 45]
-  green_range: [-90, 90] #[-60, 50]
-  blue_range: [-90, 90] # [-80, 60]
-  zeropoint: [-90, -90, -90] 
-  lookscale: [180., 180., 180.]
-
-heightmap:
-  cpp_enable: False
-  abe_path: ./abe_corr.npz
-  table_path: ./table.npy
-  table_account_path: ./count_map.py
-  table_smooth_path: ./table_smooth.npy
-
 tracking:
-  lib_path: ./lib
   RESCALE: 1
   fps_: 30
+  lib_path: ./lib
