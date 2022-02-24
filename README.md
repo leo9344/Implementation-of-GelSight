@@ -82,48 +82,55 @@ Click `left button` to take `ref.jpg`, you can click more than once until you ar
 
 Click `left button` to take `sample_xx.jpg`. If `sample_to - sample_from` pictures are captured, it will terminate automatically. Or you can manually press `q` to exit in advance or continue. 
 
-### Step 1: run `calibration_abberration.py`
+### Step 1: run `camera_config.py`
 
-Capture & save `ref.jpg` .
+<!-- Capture & save `ref.jpg` .
 Resize to (320, 427) ?
-![avatar](/asset/ref.jpg)
+![avatar](/asset/ref.jpg) -->
 
 ### Step 2: Get prepared for running `calibration.py`
 
 
 #### 2.1 Measure `self.BallRad` eg: 3 
-![avatar](/asset/BallRad.jpg)
+![image](https://github.com/leo9344/Implementation-of-GelSight/blob/main/asset/BallRad.jpg)
 #### 2.2 Measure `self.Pixmm` = $\frac{Length\ (mm)}{Pixel}$ 
 ##### 2.2.1 Capture & save `Pixmm.jpg`
 
 Eg: 
-![avatar](/asset/Pixmm.jpg)
+![image](https://github.com/leo9344/Implementation-of-GelSight/blob/main/asset/Pixmm.jpg)
 
 ##### 2.2.2 Get measurement of `mm`
 Eg: mm = 3.40(mm)
-![avatar](/asset/Pixmm_mm.jpg)
+![image](https://github.com/leo9344/Implementation-of-GelSight/blob/main/asset/Pixmm_mm.jpg)
 
 ##### 2.2.3 Use `mesaure_Pixmm.py` to select 2 keypoints and calculate their distance (in `pixel`).
 
 Click once on the first keypoint, then click once on the other keypoint, you will see an arrow linking 2 keypoints with their distance.
 Eg: distance = 103.07764
-![avatar](/asset/Pixmm_result.png)
+![image](https://github.com/leo9344/Implementation-of-GelSight/blob/main/asset/Pixmm_result.png)
 
 ##### 2.2.4 Calculate the Pixmm and fill it into `calibration.py`
 In `line 13` of `calibration.py`:
 
 `self.Pixmm` = $\frac{Length\ (mm)}{Pixel} = \frac{3.40}{103.0776}=0.03298$ 
 #### 2.3 Capture & save 30 x `sample_xx.jpg`, from `sample_1.jpg` to `sample_30,jpg`. eg:
-![avatar](/asset/sample_1.jpg)
+![image](https://github.com/leo9344/Implementation-of-GelSight/blob/main/asset/sample_1.jpg)
 
 #### 2.4 run `calibration.py`
 
 
-### Step 3: run `test_poisson.py` or `Test0Cable.py`
+### Step 3: run  `Test0Cable.py`
 
 Get reconstruction result.
 
+### Step 4: run `tracking.py`
 
+Get tracking result.
+
+![image](https://github.com/leo9344/Implementation-of-GelSight/blob/main/asset/tracking1.jpg)
+
+
+![image](https://github.com/leo9344/Implementation-of-GelSight/blob/main/asset/tracking2.jpg)
 ## Improvements
 🔨Coming soon!🔨
 Thin plate spline for inpaint of markers?

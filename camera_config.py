@@ -333,7 +333,6 @@ if __name__ == "__main__":
             key = cv2.waitKey(1)
             if key & 0xFF == ord('q'):
                 cv2.destroyWindow(crop_window_name)
-                print(1)
                 break
 
         print("Image cropping finished.")
@@ -345,7 +344,6 @@ if __name__ == "__main__":
         print("No need to crop. Reset the config.yaml")
     
     cfg['calibration'] = calibration
-    print(cfg)
 
     with open("config.yaml",'w',encoding='utf-8') as w_f:
         yaml.dump(cfg,w_f)

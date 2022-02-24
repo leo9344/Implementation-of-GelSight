@@ -10,8 +10,8 @@ calibration:
     - 0.31465177446412596
     - -0.015119663896729281
     - -232.52542390256139
-  downright_x: 419
-  downright_y: 312
+  downright_x: 417
+  downright_y: 316
   green_range:
   - -90
   - 90
@@ -34,8 +34,8 @@ calibration:
   red_range:
   - -90
   - 90
-  upleft_x: 177
-  upleft_y: 84
+  upleft_x: 180
+  upleft_y: 87
   zeropoint:
   - -90
   - -90

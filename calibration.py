@@ -298,7 +298,7 @@ class calibration:
         return table_new
         
         
-upleft_x, upleft_y, downright_x, downright_y = 0,0,0,0
+# upleft_x, upleft_y, downright_x, downright_y = 0,0,0,0
 
 def load_crop_params():
     global upleft_x, upleft_y, downright_x, downright_y
