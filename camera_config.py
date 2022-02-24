@@ -313,6 +313,13 @@ if __name__ == "__main__":
         crop_window_name = 'Crop configuration'
         cv2.namedWindow(crop_window_name)
         cv2.setMouseCallback(crop_window_name, imp.on_EVENT_LBUTTONDOWN)
+        if method == 'camera':
+            img = im
+            h, w = img.shape[:2]
+            newcameramtx, roi = cv2.getOptimalNewCameraMatrix(mtx,dist,(w,h),1,(w,h))#显示更大范围的图片（正常重映射之后会删掉一部分图像）
+            dst = cv2.undistort(img,mtx,dist,None,newcameramtx)
+            x,y,w,h = roi
+            im = dst[y:y+h,x:x+w]
         imp.img = im
         imp.upleft_y = 0
         imp.upleft_x = 0
